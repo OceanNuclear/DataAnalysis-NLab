@@ -1,0 +1,21 @@
+0. Read your lab report feedback first before doing anything else.
+	-read your previous year's lab book
+	-read /home/ocean/Dropbox/PTNR/5-Practical-Skills-for-Reactor-Physics/MSc-Nuclear-Labs/Link to MScNuclearLab/Link to 2018-11-16
+0.5: organize the following points in order	
+1. (Insert Bubble plots)
+2. Here we can see that the data is approximately behaving as we expected it to, i.e. has a higher count rate at the centre.
+3. But for the back side of the graphite stack we encountered some trouble when collecting data. This goes against our knowledge, and thus we attribute it to the bending of the wire (which was observed to reliably reproduce counting rate error) when it was plugged into the back side of the graphite stack. In light of this all data collected for the back side of the graphite stack will be discarded.
+4. Then we can fit for different models:
+strangely we see a better chi square result for
+5. The Chi^2 is high for all of them because this detector is not designed to detect fast neutron accurately and efficiently across the whole fast neutron energy spectrum; and we do not have the data to model the fast neutrons accurately; instead, the two group diffusion model is only a firt order correction for finding the thermal neutron flux distribution more accurately; its constants were not intended to be applied onto finding the fast neutron flux distribution accurately.
+6. In the lab report, must mention that:
+- The efficiency does not matter;
+- Operating principle of the detector, nonetheless.
+7. State detail about fitting in both book and report:
+- Explain V vs Time
+	-explain the electronics
+- Explain the threshold for cutoff etc. logic
+- Explain count_rate vs (pulse height)
+8. Make note about peak fitting:
+- Each Gaussian that represent a peak should have a FWHM that ~increases slowly wrt. energy. Therefore nearby peaks with vastly different FWHM must be due to poor fit; e.g. 133Ba 4-peak fit (as was carried out on 2018-11-16 15:39:33) is poor, and must be explainable by all peaks having a leftward skew factor, thus the lower peak on the right is fitted to have a wider σ than it actually does.
+9. WHAT IS THE GAIN USED ON OUR AMPLIFIER IN THE NEUTRON in GRAPHITE STACK EXP???

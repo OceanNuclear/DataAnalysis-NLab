@@ -1,0 +1,36 @@
+No convergence at x=0 and x~40.
+
+ocean@ocean-UX550VE:~/Documents/NuclearAndMaterialsProjects/MScNuclearLab$ ./fluxFit.py 
+^[[Afor y= 0
+__End of importing fluxFit, forgetting all variables_____weeeeeeee____
+for y= 0
+/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/fluxDists.py:113: RuntimeWarning: invalid value encountered in sqrt
+  ord1 = Square(xz,sqrt(tau),α)
+/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/fluxDists.py:114: RuntimeWarning: invalid value encountered in sqrt
+  ord3 = Square3(xz,sqrt(tau),α)#reactor side length reached.
+Traceback (most recent call last):
+  File "./fluxFit.py", line 94, in <module>
+    ThirdOrd_TwoGrp_Thmz,xzThm,ThmFlux,ThmErr,[160,368,0.4,77]
+  File "/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/handleFit.py", line 20, in handleFittingResult
+    popt, pcov = curve_fit(func, xdata, ydata, sigma=yerr, p0=guess,absolute_sigma=True, check_finite=True)
+  File "/home/ocean/anaconda3/lib/python3.6/site-packages/scipy/optimize/minpack.py", line 755, in curve_fit
+    raise RuntimeError("Optimal parameters not found: " + errmsg)
+RuntimeError: Optimal parameters not found: Number of calls to function has reached maxfev = 1000.
+
+ocean@ocean-UX550VE:~/Documents/NuclearAndMaterialsProjects/MScNuclearLab$ ./fluxFit.py 
+^[[Afor y= 0
+__End of importing fluxFit, forgetting all variables_____weeeeeeee____
+for y= 0
+/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/fluxDists.py:113: RuntimeWarning: invalid value encountered in sqrt
+  ord1 = Square(xz,sqrt(tau),α)
+/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/fluxDists.py:114: RuntimeWarning: invalid value encountered in sqrt
+  ord3 = Square3(xz,sqrt(tau),α)#reactor side length reached.
+Traceback (most recent call last):
+  File "./fluxFit.py", line 94, in <module>
+    ThirdOrd_TwoGrp_Thmz,xzThm,ThmFlux,ThmErr,[160,368,0.4,77]
+  File "/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/handleFit.py", line 20, in handleFittingResult
+    popt, pcov = curve_fit(func, xdata, ydata, sigma=yerr, p0=guess,absolute_sigma=True, check_finite=True)
+  File "/home/ocean/anaconda3/lib/python3.6/site-packages/scipy/optimize/minpack.py", line 755, in curve_fit
+    raise RuntimeError("Optimal parameters not found: " + errmsg)
+RuntimeError: Optimal parameters not found: Number of calls to function has reached maxfev = 1000.
+

@@ -1,0 +1,75 @@
+for method in methodList:
+	FastSquare	:		titleName = "Fast neutron flux distribution"
+		zT(0-4), xLims(0-6), zCutOff(0-1)
+	FastSquare_τ	:	titleName = "Fast neutron flux distribution"
+		zT(0-4), zCutOff(0-1)
+	FastSph	:			titleName = "Fast neutron flux distribution with spherically symmetric fit"
+		zT(0-4), xLims(0-6), zCutOff(0-1)
+	FastSph_τ	:		titleName = "Fast neutron flux distribution with spherically symmetric fit"
+		zT(0-4), xLims(0-6), zCutOff(0-1)
+	OneGrp_Thm	:		titleName = "Thermal neutron flux distribution with 1 group fit"
+		zT(0-6), xLims(0-6), zCutOff(0-1)
+	TwoGrp_Thm	:		titleName = "Thermal neutron flux distribution with 2 group fit with fixed τ"
+		zT(0-6), xLims(0-6), zCutOff(0-1)
+	TwoGrp_redefine_τ :	titleName = "Thermal neutron flux distribution with 2 group fit with"
+		zT(0-6), xLims(0-6), zCutOff(0-1)
+	OneGrp_Thm_Sph:		titleName = "Thermal neutron flux distribution with 1 group spherically symmetric fit"
+		zT(0-6), xLims(0-6), zCutOff(0-1)
+	#CAN'T run these two for y=71
+	ThirdOrd_OneGrp_Thmz:	titleName = "Thermal neutron flux distribution 1 group fit with 3rd order term"
+		zT(0-6)
+	ThirdOrd_TwoGrp_Thmz:	titleName = "Thermal neutron flux distribution 2 group fit with 3rd order term"
+		zT(0-6)
+	FixL:	titleName = "Thermal neutron flux distribution 1 group fit with 3rd order term"
+		zT(0-6) ONLY
+	FixLtau:titleName = "Thermal neutron flux distribution 2 group fit with 3rd order term"
+		zT(0-6) ONLY
+	OneGrp_ThmNoBD: titleName = "(Truncated) Thermal neutron flux distribution with 1 group fit"
+		zT(0-6), xLim(0-6), zCutoff(0-1)
+	GreensFuncFast: titleName = "Sinusoidal Summation for fast neutron flux distribution"
+	GreensFunc 	: titleName =   "Sinusoidal Summation for fast neutron flux distribution"
+
+fastLims =	zThreshold:(20.0,21.0),	(40.0,41.0),	(60.0,61.0), (80.0,82.0),	(101.0,102.0)
+						20.25			40.5		60.75		 	60.75			101.25			141.75		182.25
+			xThreshold:(-61.0,-60.0),(-41.0,-40.0),(-21.0,-20.0),(-1.0,1.0),(20.0,21.0),		(40.0,41.0),(60.0,61.0)
+						-60.75			-40.5		-20.25			0			20.25			40.5		60.75
+			zThreshold:							(60.0)		(80.0)
+
+ThmLims  =	zThreshold:(20.0,21.0),	(40.0,41.0),	(60.0,61.0), (80.0,82.0),	(101.0,102.0),(141.0,142.0),(182.0,183.0)
+			xThreshold:(-61.0,-60.0),(-41.0,-40.0),(-21.0,-20.0),(-1.0,1.0),(20.0,21.0),		(40.0,41.0),(60.0,61.0)
+			zThreshold:							(60.0)		(80.0)
+
+Run model 1-8 (ignoring 4) for target_y=71; save them to their respective folders
+
+RN:
+#	1. decrease size of figures in .py files
+#	2. build program to truncate in the opposite direction
+
+	Close to source:
+	for 3.FastSph
+#	heatmap <Make heatmap for truncated to near source(<=60.75cm)(-2)>	(0,--)
+#	<Insert 1 x-plane cross section (z= 40.5 cm) zT(0)>				(0,--)
+	for 8.OneGrp_Thm_Sph
+#	heatmap <Make heatmap for truncated to near source(<=60.75cm)(-2)>	(0,--)
+#	<Insert 1 x-plane cross section (z= 40.5 cm) zT(0)>				(0,--)
+
+Far away from Source:
+	for 5.OneGrp_Thm
+#	<insert 1 low -z x plane, 1 high-z x plane, compare their goodness of fit>				(0 for low, 71 for high)
+#	<insert 1 vertical slice (z=0), for truncated vs untruncated, compare goodness of fit>	(0 for full untruncated, 71 for truncated)
+	Repeat the above for 1.FastSquare:
+#	<insert 1 low -z x plane, 1 high-z x plane, compare their goodness of fit>				(0 for low, 71 for high)
+#	<insert 1 vertical slice (z=0), for truncated vs untruncated, compare goodness of fit>	(0 for full untruncated, 71 for truncated)
+	for 14.naive model (14.NoBDFit)
+#	heatmap <insert one group fit, naive model, heatmap truncated to ≥60.75cm >				(0,71)
+	for 1.FastSquare
+#	heatmap <insert graph for 𝜙T ∝cos exp(-z \sqrt etc.) heatmap ≥60.75cm >					(0,71)
+	for 5.OneGrp_Thm again:
+#	heatmap <insert graph for 𝜙T ∝cos exp(-z \sqrt etc.) heatmap ≥60.75cm >					(0,71)
+	for 7.TwoGrp_redefine_τ:
+#	heatmap ≥60.75cm <insert two group graph, truncated to z≥60.75>							(0,71)
+	for 10.ThirdOrd_TwoGrp_Thmz
+#	heatmap ≥60.75 <attach 3rd order graph>													(0)
+<attach Dave's graphs>
+#	<Use .pptx to draw the circuit diagram>
+#When in doubt, trust your folder names

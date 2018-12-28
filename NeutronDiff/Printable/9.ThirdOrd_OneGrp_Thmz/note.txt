@@ -1,0 +1,27 @@
+The left most two columns of the graphite stack cannot be fitted.
+The following error message is printed when trying to find the optimal parameter:
+
+ocean@ocean-UX550VE:~/Documents/NuclearAndMaterialsProjects/MScNuclearLab$ ./fluxFit.py 
+for y= 0
+__End of importing fluxFit, forgetting all variables_____weeeeeeee____
+for y= 0
+Traceback (most recent call last):
+  File "./fluxFit.py", line 93, in <module>
+    ThirdOrd_OneGrp_Thmz,xzThm,ThmFlux,ThmErr,[160,0.4,77]
+  File "/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/handleFit.py", line 20, in handleFittingResult
+    popt, pcov = curve_fit(func, xdata, ydata, sigma=yerr, p0=guess,absolute_sigma=True, check_finite=True)
+  File "/home/ocean/anaconda3/lib/python3.6/site-packages/scipy/optimize/minpack.py", line 755, in curve_fit
+    raise RuntimeError("Optimal parameters not found: " + errmsg)
+RuntimeError: Optimal parameters not found: Number of calls to function has reached maxfev = 800.
+ocean@ocean-UX550VE:~/Documents/NuclearAndMaterialsProjects/MScNuclearLab$ ./fluxFit.py 
+for y= 0
+__End of importing fluxFit, forgetting all variables_____weeeeeeee____
+for y= 0
+Traceback (most recent call last):
+  File "./fluxFit.py", line 93, in <module>
+    ThirdOrd_OneGrp_Thmz,xzThm,ThmFlux,ThmErr,[160,0.4,77]
+  File "/home/ocean/Documents/NuclearAndMaterialsProjects/MScNuclearLab/handleFit.py", line 20, in handleFittingResult
+    popt, pcov = curve_fit(func, xdata, ydata, sigma=yerr, p0=guess,absolute_sigma=True, check_finite=True)
+  File "/home/ocean/anaconda3/lib/python3.6/site-packages/scipy/optimize/minpack.py", line 755, in curve_fit
+    raise RuntimeError("Optimal parameters not found: " + errmsg)
+RuntimeError: Optimal parameters not found: Number of calls to function has reached maxfev = 800.
