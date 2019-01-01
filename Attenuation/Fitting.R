@@ -34,12 +34,13 @@ readVar <- function(fname,color){
 	row.names(df)<-NULL
 	return(df)
 }
-toFormula<- function(coefs,srpcov){
+toFormula<- function(coefs,srpcov,chi.squared){
 	#You'd think for a language specialzing in plotting, I don't have to write my own code just to add numbers onto the graph...	
 	text <-paste(     "m=", toString(signif(coefs[2],3)))
 	text <-paste(text,"±" , toString(signif(srpcov[2,2],3)))
 	text <-paste(text,",c=",toString(signif(coefs[1],3)))
 	text <-paste(text,"±" , toString(signif(srpcov[1,1],3)))
+	text <-paste(text,", chi squared per DoF = ",toString(signif(chi.squared,3)))
 	return (text)
 }
 lmize <- function(dat,resid=F,cov=F){
@@ -58,7 +59,7 @@ lmize <- function(dat,resid=F,cov=F){
 		m=coefs[2],c=coefs[1],
 		dm = srpcov[2,2],dc = srpcov[1,1],
 		chi.sq.per.DoF= summary(lmobj)$sigma,#chi-squared per DoF
-		formula=toFormula(coefs,srpcov),
+		formula=toFormula(coefs,srpcov,summary(lmobj)$sigma),
 		color=color
 		)
 	return (optimized)
