@@ -60,8 +60,8 @@ lmize <- function(dat,resid=F){
 	return (optimized)
 }
 
+c.conv=cbind(c('blue','red'),c('collimated','uncollimated'))#conversion between plot-colors and geometry
 #x,2 are the geometry; x,1 are the color
-c.conv=cbind(c('blue','red'),c('collimated','uncollimated'))
 
 #Generate the dataframes+their optimization results
 dfc		=  readVar(  "Col.tsv",  c.conv[1,1])
