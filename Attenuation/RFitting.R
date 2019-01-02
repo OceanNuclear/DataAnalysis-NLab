@@ -5,7 +5,7 @@ quadrature <- function(a,b){
 }
 
 #Record background
-bg = c(0.9,0.3,0.6)/2#changes these records
+bg = c(0.9,0.3,0.6)/1000#changes these records
 
 #function to turn file into data frame
 readVar <- function(fname,color){
@@ -76,7 +76,8 @@ opt.u	<- lmize(dfu)
 
 DF = rbind(dfc,dfu)#combine the data frames
 #create the caption
-caption="fit equation = m*x + c"
+caption="fit equation = m*x + c, i.e. ignoring build-up factor"
+caption=paste(caption, '\noptimized using the method of least squares.')
 caption=paste(caption, '\ncollimated:')
 caption=paste(caption, toString(unlist(opt.c['formula'])))
 caption=paste(caption, '\nuncollimated:')
