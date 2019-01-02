@@ -5,8 +5,9 @@ quadrature <- function(a,b){
 }
 
 #Record background
-bg = c(0.9,0.3,0.6)/1000#changes these records
-
+bg = c(0.7,0.3,0.4)#changes these records
+#print((sd(bg))^2)
+#print(mean(bg))
 #function to turn file into data frame
 readVar <- function(fname,color){
 	dat 	= read.table(fname, header=T, sep="\t",check.names=F)
