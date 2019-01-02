@@ -11,12 +11,14 @@ for geom in ["Col","Uncol"]:
 		material = "Fe/C"+material
 	elif geom=="Uncol":
 		material="Fe/Unc"+material
-	for num in range(2,3):
+	for num in range(1,5):
 		fileName = prepending+material+str(num)+appending
 		f = open(fileName,"r")
 		data = f.readlines()
 		f.close()
 		data = [ int(x) for x in data[12:8204] ]
-		plt.semilogy(data,alpha=0.3,label=str(num)+" plate, "+geom)
+		#gotta wait for the calibration equation to come in to plot the x axis properly.
+		plt.semilogy(data,alpha=0.55-num*0.1,label=str(num)+" plate, "+geom)
+plt.xlabel("energy (keV)")
 plt.legend()
 plt.show()
