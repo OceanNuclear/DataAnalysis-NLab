@@ -76,7 +76,8 @@ opt.u	<- lmize(dfu)
 
 DF = rbind(dfc,dfu)#combine the data frames
 #create the caption
-caption="collimated:"
+caption="fit equation = m*x + c"
+caption=paste(caption, '\ncollimated:')
 caption=paste(caption, toString(unlist(opt.c['formula'])))
 caption=paste(caption, '\nuncollimated:')
 caption=paste(caption, toString(unlist(opt.u['formula'])))
@@ -90,7 +91,7 @@ gplotobj<-
 	#labelling
 	labs(x="thickness(mm)",y='log( dose rate/(1 microSv/hr) )',
 		title="Semi-log(y) plot of dose rate")+
-	#change the name of colors on the legedn into things
+	#change the name of colors on the legend into proper names
 	scale_color_manual(labels = c.conv[,2], values = c.conv[,1]) 
 gplotobj<-gplotobj+
 	geom_abline(data=opt.c,aes(intercept=c,slope=m,color=color))+
