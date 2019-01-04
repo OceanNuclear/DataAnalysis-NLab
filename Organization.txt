@@ -1,0 +1,30 @@
+LabBook2:
+1. ~/Attenuation/Calib/*800V.Spe
+	#For actual calibration
+2. Use these information to tell the energy resolution
+2.5Python plot of energy resolution
+3. Make calibration equation, use that as the x-axis (energy) for my python plots
+4. Draw conclusoin about how uncollimating leads to a build up factor.
+
+LabBook3:
+1. ~/Coincidence/Calib/*
+	#For actual calibration for EACH week
+2. Extract the duration and date info for ~/Coincidence/Calib/11-16/* and ~/Coincidence/Calib/11-30
+	#Make a readme file in each of the said directory
+	#each of the timing/efficiency related plot.
+######################
+3. Check what does each file in the ~/Coincidence/Main/. actually do
+#By extracting the date and duration from each file
+4. Check what does each file in the ~/Coincidence/Ascii actulally do
+#!/Ascii/ has backgound in it!
+######################
+5. Match a number of spectra to sources used in Aut7(11-16), and fit those ones
+	#241Am
+	#22Na
+	#60Co
+	#137Cs
+6. Use the same data for resolution
+7. Fit all Gaussian peaks (timing coins for 22Na) to get their thingy
+8. Run Deconv.C on ~/Coincidence/Calib/12-07/44Ti_Deconvolute_Coincidence_Decay_Period.Spe
+9. Fit a few of those cut-off (into parabolic on the log-scale) just to print it on the lab book
+	#Find the time as well so that you can use the calibration equation
