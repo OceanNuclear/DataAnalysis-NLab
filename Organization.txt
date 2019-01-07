@@ -21,19 +21,18 @@ Buffit *
 #In 12-07/:
 Buffit TAC-Spectra/*
 SetFixedFWHM()
-Buffit Calibration* Calibration*/*
+Buffit Calibration/*.Spe
 
-2. Extract the duration and date info for ~/Coincidence/Calib/11-16/* and ~/Coincidence/Calib/11-30
-	#Make a readme file in each of the said directory
-	#each of the timing/efficiency related plot.
-Get the calibration equation for each week
-5. Match a number of spectra to sources used in Aut7(11-16), and fit those ones
+1. Get the calibration equation for Wk1, Wk2, Wk4
+2. Print the spectra in 12-07/Calibration/ShowEnergySelection-cutoff/*
+	#Stick them into the lab book to show how the energy selection is done
+	#hmm... may have to tweak the data a biiiiiiit.
+3. Fit the resolution for a single detector.
+4. Match a number of spectra to sources used in Wk1(11-16), to find efficiency
 	#241Am
 	#22Na
 	#60Co
 	#137Cs
-6. Use the same data for resolution
-7. Fit all Gaussian peaks (timing coins for 22Na) to get their thingy
-8. Run Deconv.C on ~/Coincidence/Calib/12-07/44Ti_Deconvolute_Coincidence_Decay_Period.Spe
-9. Fit a few of those cut-off (into parabolic on the log-scale) just to print it on the lab book
-	#Find the time as well so that you can use the calibration equation
+	#Double check that the distance is exactly the same for all of them.
+	#It should have been written on your lab book.
+5. Run Deconv.C on /home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/TAC-Spectra/44Ti_Deconvolute_Coincidence_Decay_Period.Spe

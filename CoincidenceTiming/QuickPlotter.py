@@ -5,14 +5,12 @@ fileName = [#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTimin
 			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/Ascii/133Ba_spectrum.Spe",
 			#'/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/Calibrations/11-16/241Am_spectrum.Spe',
 			#'Calibrations/12-07/68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe',
-			#'68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe',
-			#'Det_A_44Ti_67_78_peaks_calibraton.Spe',
 			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/Calibrations/11-16/241Am_spectrum.Spe",
 			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/Ascii/241Am_spectrum.Spe",
 			#
 			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/44Ti_Deconvolute_Coincidence_Decay_Period.Spe",
-			"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe",
-			"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Det_A_44Ti_67_78_peaks_calibraton.Spe",
+			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/ShowEnergySelection-cutoff/Det_A_44Ti_67_SCA_Window.Spe",
+			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/ShowEnergySelection-cutoff/Det_B_44Ti_67_78_SCA_Window.Spe",
 			#"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe",
 			]
 n=0
