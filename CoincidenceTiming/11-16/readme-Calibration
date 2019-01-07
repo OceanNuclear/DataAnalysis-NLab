@@ -1,0 +1,44 @@
+Binary file 133Ba_Peaks.pdf matches
+--
+133Ba_spectrum.Spe:Live Time
+133Ba_spectrum.Spe-180
+Binary file 137Cs_662keV.pdf matches
+--
+137Cs_spectrum.Spe:Live Time
+137Cs_spectrum.Spe-180
+Binary file 22Na-180s-511keV.pdf matches
+--
+22Na_spectrum2.Spe:Live Time
+22Na_spectrum2.Spe-180
+--
+22Na_spectrum.Spe:Live Time
+22Na_spectrum.Spe-91000
+Binary file 241Am.pdf matches
+--
+241Am_spectrum.Spe:Live Time
+241Am_spectrum.Spe-180
+Binary file 60Co_2peaks.pdf matches
+--
+#In other words all files in /Calibration are recorded at 180 seconds.
+#
+60Co_spectrum.Spe:Live Time
+60Co_spectrum.Spe-180
+Binary file Cs137_662keV.pdf matches
+--
+133Ba_spectrum.Spe:$DATE_MEA:
+133Ba_spectrum.Spe-11/16/2018 15:00:27
+--
+137Cs_spectrum.Spe:$DATE_MEA:
+137Cs_spectrum.Spe-11/16/2018 11:36:57
+--
+22Na_spectrum2.Spe:$DATE_MEA:
+22Na_spectrum2.Spe-11/16/2018 12:17:24
+--
+22Na_spectrum.Spe:$DATE_MEA:
+22Na_spectrum.Spe-11/16/2018 10:39:21
+--
+241Am_spectrum.Spe:$DATE_MEA:
+241Am_spectrum.Spe-11/16/2018 11:43:19
+--
+60Co_spectrum.Spe:$DATE_MEA:
+60Co_spectrum.Spe-11/16/2018 14:56:45

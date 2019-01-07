@@ -1,0 +1,28 @@
+44Ti_Deconvolute_Coincidence_Decay_Period.Spe:Live Time
+44Ti_Deconvolute_Coincidence_Decay_Period.Spe-1000
+--
+68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe:Live Time
+68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe-200
+--
+Det_A_44Ti_67_SCA_Window.Spe:Live Time
+Det_A_44Ti_67_SCA_Window.Spe-200
+--
+Det_B_44Ti_67_78_SCA_Window.Spe:Live Time
+Det_B_44Ti_67_78_SCA_Window.Spe-200
+--
+Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe:Live Time
+Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe-200
+44Ti_Deconvolute_Coincidence_Decay_Period.Spe:$DATE_MEA:
+44Ti_Deconvolute_Coincidence_Decay_Period.Spe-12/07/2018 14:57:27
+--
+68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe:$DATE_MEA:
+68Ge_Det_B_44Ti_67_78_peaks_calibraton.Spe-12/07/2018 12:16:32
+--
+Det_A_44Ti_67_SCA_Window.Spe:$DATE_MEA:
+Det_A_44Ti_67_SCA_Window.Spe-12/07/2018 14:29:49
+--
+Det_B_44Ti_67_78_SCA_Window.Spe:$DATE_MEA:
+Det_B_44Ti_67_78_SCA_Window.Spe-12/07/2018 14:10:20
+--
+Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe:$DATE_MEA:
+Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe-12/07/2018 11:52:03

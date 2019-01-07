@@ -1,0 +1,22 @@
+#800V one is cp'ed from the directory above.
+600V_50_Co60.Spe:Real Time
+600V_50_Co60.Spe-300
+--
+650V_50_Co60.Spe:Live Time
+650V_50_Co60.Spe-100
+--
+800V_50_Co60.Spe:Live Time
+800V_50_Co60.Spe-180
+----
+600V_50_Co60.Spe:$DATE_MEA:
+600V_50_Co60.Spe-11/23/2018 10:17:15
+--
+650V_50_Co60.Spe:$DATE_MEA:
+650V_50_Co60.Spe-11/23/2018 10:20:42
+--
+800V_50_Co60.Spe:$DATE_MEA:
+800V_50_Co60.Spe-11/16/2018 14:56:45
+
+#The first two were recorded in 2nd week, the third(normal, 800V) was recorded in the 1st week.
+#All has coarse gain = 50 and fine gain =0.
+#The time doesn't matter because I'll normalize it in the end anyways.

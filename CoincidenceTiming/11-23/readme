@@ -1,0 +1,23 @@
+Binary file 22Na1200_A.pdf matches
+Binary file 22Na1200_B.pdf matches
+Binary file 22Na511_A.pdf matches
+Binary file 22Na511_B.pdf matches
+--
+22Na_A-11-23.Spe:Live Time
+22Na_A-11-23.Spe-100
+--
+22Na_B.Spe:Live Time
+22Na_B.Spe-100
+-----
+22Na_A-11-23.Spe:$DATE_MEA:
+22Na_A-11-23.Spe-11/23/2018 10:45:23
+--
+22Na_B.Spe:$DATE_MEA:
+22Na_B.Spe-11/23/2018 11:55:43
+--
+TimeCoin_1microsRange_halfmicrosDelay.Spe:$DATE_MEA:
+TimeCoin_1microsRange_halfmicrosDelay.Spe-11/23/2018 15:31:16
+
+TimeCoin_1microsRange_halfmicrosDelay is a single gaussian, recorded in 2nd week afternoon on detector B(?) (It's a follow up of 22Na_B.Spe)
+
+The other two were recorded in 1st week, at 800V gain=50 and live time = 100.

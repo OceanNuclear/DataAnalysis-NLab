@@ -1,0 +1,53 @@
+133Ba_spectrum.Spe:$DATE_MEA:
+133Ba_spectrum.Spe-11/16/2018 15:15:47
+--
+137Cs_spectrum.Spe:$DATE_MEA:
+137Cs_spectrum.Spe-11/16/2018 11:36:57
+--
+22Na_spectrum2.Spe:$DATE_MEA:
+22Na_spectrum2.Spe-11/16/2018 12:17:24
+--
+22Na_spectrum.Spe:$DATE_MEA:
+22Na_spectrum.Spe-11/16/2018 10:39:21
+--
+241Am_spectrum.Spe:$DATE_MEA:
+241Am_spectrum.Spe-11/16/2018 15:50:05
+--
+44Ti.Spe:$DATE_MEA:
+44Ti.Spe-11/16/2018 16:18:12
+--
+60Co_spectrum.Spe:$DATE_MEA:
+60Co_spectrum.Spe-11/16/2018 14:56:45
+--
+Background.Spe:$DATE_MEA:
+Background.Spe-11/16/2018 16:26:06
+Background.Spe was recorded for 1120 seconds
+--
+BrazilNuts.Spe:$DATE_MEA:
+BrazilNuts.Spe-11/16/2018 14:07:14
+BrazilNuts.Spe is recorded for 4650 seconds
+
+133Ba_spectrum.Spe:Live Time
+133Ba_spectrum.Spe-600
+--
+137Cs_spectrum.Spe:Live Time
+137Cs_spectrum.Spe-180
+--
+22Na_spectrum2.Spe:Live Time
+22Na_spectrum2.Spe-180
+--
+22Na_spectrum.Spe:Live Time
+22Na_spectrum.Spe-91000
+--
+241Am_spectrum.Spe:Live Time
+241Am_spectrum.Spe-180
+--
+44Ti.Spe:Live Time
+44Ti.Spe-180
+--
+60Co_spectrum.Spe:Live Time
+60Co_spectrum.Spe-180
+
+#IMPORTANT: THIS directory HAS THE BG SPECTRUM IN IT! Recorded in Aut6 using 800V and Gain = 50.
+133Ba_* is simply a scaled UP (measured for longer) version of 133Ba* in */11-16/.
+But is 241Am* missing a Compton continuum compared to 241Am* in */11-16/.

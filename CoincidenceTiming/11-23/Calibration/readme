@@ -1,0 +1,25 @@
+137Cs.Spe:Live Time
+137Cs.Spe-100
+--
+152Eu.Spe:Live Time
+152Eu.Spe-100
+--
+22Na.Spe:Live Time
+22Na.Spe-100
+--
+60Co.Spe:Live Time
+60Co.Spe-100
+137Cs.Spe:$DATE_MEA:
+137Cs.Spe-11/23/2018 10:50:13
+--
+152Eu.Spe:$DATE_MEA:
+152Eu.Spe-11/23/2018 10:52:50
+--
+22Na.Spe:$DATE_MEA:
+22Na.Spe-11/23/2018 10:45:23
+--
+60Co.Spe:$DATE_MEA:
+60Co.Spe-11/23/2018 10:35:29
+
+22Na.Spe is the same as 22Na_A.Spe
+#Only have to fit the spectra of 152Eu, 137Cs, 60Co
