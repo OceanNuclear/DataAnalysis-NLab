@@ -24,6 +24,8 @@ def Continuous(x):
 	return np.linspace(min(x),max(x),100, endpoint=True)
 
 (x,y,dy,labels)=Readxydy('Calib.txt')
+#(x,y,dy,labels)=Readxydy('Calib_A.txt')
+#(x,y,dy,labels)=Readxydy('Calib_B.txt')
 
 global fit
 fit = np.polyfit(x,y,1, w=dy**(-2) )#w=dy**(-1), ) #Cheekily using 1/dy instead of 1/dy^2 because I feel like it's a bit too serious
@@ -40,7 +42,8 @@ for n in range(len(x)):
 	#pass
 if 'sophisticated'=='sophisticated':
 	#Auxillary stuff around the plot
-	ax1.set_title("Calibration equation for week 2")
+	#plt.suptitle("gain=500")
+	ax1.set_title("Calibration equation")
 	ax1.set_ylabel("channel")
 	ax2.set_xlabel("Energy(keV)")
 	ax1.legend()

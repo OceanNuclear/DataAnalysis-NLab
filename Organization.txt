@@ -9,9 +9,6 @@ Fill in FWHM.txt and Calib.txt
 4. Draw conclusoin about how uncollimating leads to a build up factor.
 
 LabBook3:
-#In Wk2/Calibration:
-Buffit 152Eu*
-
 #In Wk4/:
 SetFixedFWHM()
 Buffit Calibration/*.Spe
@@ -43,3 +40,5 @@ Write on lab book:
 	c. Find the channel number we'd expect centroids of peaks to occur at in the next spectrum, using this tenative relationship.
 		This step vastly reduces the chances of mis-matchin a peak to the wrong energy.
 	d. Continuously update this .txt file so that the program can output an increasingly more accurate fit.
+2. "The ShowEnergySelection-cutoff/* has to include part of each other peak's 'feet' because the detector's poor energy resolution. 
+	This was done, as opposed to <insert graph explaining 'chopping off it's own feet to avoid the other peak'> because the former will boost the signal to noise ratio much more. The probability of a 78keV gamma being emitted within a 10 microsecond <or however many microseconds timeframe> after that is much higher than the probability of 67keV being emitted in the same time, so we decided to include more instead of less."
