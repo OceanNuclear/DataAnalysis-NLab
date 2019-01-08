@@ -1,6 +1,7 @@
 #No calibration was saved this week; instead only the TAC spectra were saved.
 22Na-B-511Window-Bipolar-0.5shaping.Spe:Live Time
 22Na-B-511Window-Bipolar-0.5shaping.Spe-300
+This file shows the cutoff in PERFECT condition.
 --
 22Na-Coin-511Window-fullrange0_5us10V_10degrees_20cm.Spe:Live Time
 22Na-Coin-511Window-fullrange0_5us10V_10degrees_20cm.Spe-300
@@ -114,3 +115,6 @@
 --
 22Na-Coin-511Window-fullrange0.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0.Spe-11/30/2018 15:34:41
+
+For 60+ degrees, everything had to be carried out in 20cm geometry.
+"Due to the inflexibility in choice of minima-finding algorithm, the fits still showed larger than expected background count rate."
