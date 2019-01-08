@@ -9,17 +9,15 @@ Fill in FWHM.txt and Calib.txt
 4. Draw conclusoin about how uncollimating leads to a build up factor.
 
 LabBook3:
-##remember to update Wk1/readme*, Wk*/Graphs, Wk3/readme, Wk4/readme, Wk4/TAC*
-
-Buffit OperatingVoltage_Gain/*
-#In 11-16/: 
+SetFixedFWHM()
+#In 11-16/:
 Buffit 133* 44* Background.Spe BrazilNuts.Spe 241*
-	#133 should only be a scaled up version of its counterpart.
-#In 11-23/:
-Buffit TimeCoin_1microsRange_halfmicrosDelay.Spe, */152Eu, */137Cs, */60Co
-	#
+	#133 should only be a scaled up version of its counterpart in the other folder
+
+#In 11-23/Calibration:
+Buffit 152Eu* 137Cs* 60Co*
+
 #In 12-07/:
-Buffit TAC-Spectra/*
 SetFixedFWHM()
 Buffit Calibration/*.Spe
 
