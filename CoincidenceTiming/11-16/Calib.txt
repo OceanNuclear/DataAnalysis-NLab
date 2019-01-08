@@ -1,0 +1,29 @@
+#planned to exlclude 22Na high peak because it seems to cause a lot of pain.
+#22Na high
+1274.537	1472	0.3
+#22Na low
+511	605	0.1	#saved on a separate graph
+#137Cs
+661.657	778.5	0.1
+
+#60Co
+1332.492	1546	0.1	
+1173.228	1364	0.1	
+
+#Potassium/BG
+1460.822	1677	0.9
+
+#44Ti
+67.8679	83.75	0.02
+78.3234	97.13	0.02
+
+#241Am
+59.5409	72.52	0.01	No fixed FWHM
+#59.5409	72.19	0.01	Fixed FWHM #don't use this one
+
+#133Ba
+80.9979 	99.61	0.02	#saved on a separate graph
+276.3989	332.4	0.7
+302.8508	363.5	0.3
+356.0129	425.2	0.1
+383.8485	465.6	0.4

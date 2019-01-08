@@ -9,15 +9,10 @@ Fill in FWHM.txt and Calib.txt
 4. Draw conclusoin about how uncollimating leads to a build up factor.
 
 LabBook3:
-SetFixedFWHM()
-#In 11-16/:
-Buffit 133* 44* Background.Spe BrazilNuts.Spe 241*
-	#133 should only be a scaled up version of its counterpart in the other folder
+#In Wk2/Calibration:
+Buffit 152Eu*
 
-#In 11-23/Calibration:
-Buffit 152Eu* 137Cs* 60Co*
-
-#In 12-07/:
+#In Wk4/:
 SetFixedFWHM()
 Buffit Calibration/*.Spe
 
@@ -40,3 +35,11 @@ Buffit Calibration/*.Spe
 	#Double check that the distance is exactly the same for all of them.
 	#It should have been written on your lab book.
 5. Ask someone how to run Deconv.C on /home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/TAC-Spectra/44Ti_Deconvolute_Coincidence_Decay_Period.Spe
+
+Write on lab book:
+1. It is helpful to have a written table of known peak energies (with intensity >5%) of all the sources used, and a quick linear regression program.
+	a. Find the centroid of peaks in simple spectra (Co-60 and Cs-137), put down their energies into a .txt file.
+	b. Use the program to calculate a tenative best fit relationship between the gamma energy E_gamma and the channel number.
+	c. Find the channel number we'd expect centroids of peaks to occur at in the next spectrum, using this tenative relationship.
+		This step vastly reduces the chances of mis-matchin a peak to the wrong energy.
+	d. Continuously update this .txt file so that the program can output an increasingly more accurate fit.

@@ -51,3 +51,4 @@ BrazilNuts.Spe is recorded for 4650 seconds
 #IMPORTANT: THIS directory HAS THE BG SPECTRUM IN IT! Recorded in Aut6 using 800V and Gain = 50.
 133Ba_* is simply a scaled UP (measured for longer) version of 133Ba* in */11-16/.
 But is 241Am* missing a Compton continuum compared to 241Am* in */11-16/.
+Ignore the first Na spectrum, because it's created in the wrong voltage range...
