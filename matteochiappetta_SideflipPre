@@ -1,0 +1,22 @@
+s
+s
+s
+f
+c
+c
+o
+o
+o
+c
+o
+o
+o
+o
+o
+o
+e
+#s-Safely attempted (with a mat)
+#f-fail
+#c-catastrophic fail (caught by spotter)
+#o-overshot, corrected by self
+#e-end, successful stick

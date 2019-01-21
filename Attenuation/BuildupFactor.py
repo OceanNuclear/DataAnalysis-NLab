@@ -92,7 +92,7 @@ def offdiag(matrix):
 def fittedFunc(x, a,b):
 	yCalc = (1+a*x)*np.exp(-b*x)
 	return normalize(yCalc)
-equation="(1+a*x)*np.exp(-b*x)"
+equation="(1+a*x)*exp(-b*x)"
 guess = [1,2]
 title = "polynomial*exp fit for uncollimated geometry"
 #title = input("Please input the title(press enter to dismiss): ")

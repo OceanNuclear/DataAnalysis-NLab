@@ -31,3 +31,4 @@ Na-22-COIN-(FWHM-investigation)-SameSettingAsLastWeek.Spe-12/07/2018 11:52:03
 
 The Calibration/*.Spe files are only for creating the calibration equations (Calibration/Graphs/*) used for labelling the axes in the Calibration/ShowEnergySelection-cutoff/Det_*_44Ti_67*_SCA_Window.Spe
 
+Det A has FWHM of 137.7±1.4; Det B has FWHM of 90.71±1.98
