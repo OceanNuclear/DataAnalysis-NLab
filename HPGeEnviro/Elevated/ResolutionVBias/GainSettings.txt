@@ -1,0 +1,17 @@
+137 Cs was used,
+elevated to the 2nd level from the top inside the lead housing (5.5cm)
+(The dead time informtaion are available inside the IEC files; whereas the TKA files are more easily opened by Buffit.)
+The data are recorded with the following gains:
+3.0kV
+CoarseGain=50
+FineGain=7.50
+2.8kV
+CoarseGain=50
+FineGain=7.50
+2.6kV
+CoarseGain=50
+FineGain=7.50
+2.4kV
+CoarseGain=20
+FineGain=0.5
+2.2kV

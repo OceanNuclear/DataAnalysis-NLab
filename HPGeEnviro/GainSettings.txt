@@ -1,0 +1,5 @@
+3.0kV
+FineGain=7.5
+CoarseGain=50
+
+2.5kV
