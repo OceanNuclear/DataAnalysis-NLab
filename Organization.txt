@@ -2,11 +2,11 @@ LabBook2:
 1. ~/Attenuation/Calib/*800V.Spe
 	#For actual calibration
 2. Use these information to tell the energy resolution
+4. Draw conclusoin about how uncollimating leads to a build up factor.
 #
 Fill in FWHM.txt and Calib.txt
 2.5Python plot of energy resolution
 3. Make calibration equation, use that as the x-axis (energy) for my python plots
-4. Draw conclusoin about how uncollimating leads to a build up factor.
 
 LabBook3:
 #In Wk4/:

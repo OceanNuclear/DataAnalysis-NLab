@@ -1,30 +1,28 @@
 #planned to exlclude 22Na high peak because it seems to cause a lot of pain.
-#22Na_spectrum2.Spe-180
-#22Na high
-1274.537	1.56e+04	1.34e+02
-#22Na low
-511	8.564e+04	3.199e+02	#saved on a separate graph
+#22Na 22Na_spectrum2.Spe-180
+1274.537	1.56e+04	1.34e+02	99.94	#22Na high
+511     	8.564e+04	3.199e+02	180.76	#22Na low	#saved on a separate graph
 #137Cs 137Cs_spectrum.Spe-180
-661.657	6.324e+04	2.568e+02
+661.657 	6.324e+04	2.568e+02	85.1
 
 #60Co 60Co_spectrum.Spe-180
-1332.492	1.206e+05	5.284e+02
-1173.228	1.45e+05	7.71e+02
+1332.492	1.206e+05	5.284e+02	99.9826
+1173.228	1.45e+05	7.71e+02	99.85
 
 #Should minus the bg before you do the fitting....
 
 #44Ti 44Ti.Spe-180
-67.8679	2.959e+05	1.231e+03
-78.3234	2.258e+05	1.058e+03
+67.8679 	2.959e+05	1.231e+03	93
+78.3234 	2.258e+05	1.058e+03	96.4
 
 #241Am 241Am_spectrum.Spe-180
-59.5409	3.746e+05	4.002e+03	No fixed FWHM
+59.5409 	3.746e+05	4.002e+03	35.9	No fixed FWHM
 #59.5409		Fixed FWHM #don't use this one
 
 #133Ba 133Ba_spectrum.Spe-600
-80.9979 	2.837e+05	1.789e+03	#saved on a separate graph
-276.3989	4.042e+04	2.656e+03
-302.8508	7.972e+04	1.742e+03
-356.0129	2.592e+05	1.291e+03
-383.8485	3.56e+04	1.43e+03
+80.9979 	2.837e+05	1.789e+03	32.9	#saved on a separate graph
+276.3989	4.042e+04	2.656e+03	7.16
+302.8508	7.972e+04	1.742e+03	18.34
+356.0129	2.592e+05	1.291e+03	62.05
+383.8485	3.56e+04	1.43e+03	8.94
 #All except 133Ba were recorded for 180. 133Ba was recorded for 5 times as much.

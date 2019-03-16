@@ -33,8 +33,8 @@ def Continuous(x):
 #(x,y,dy,labels)=Readxydy('Calib_A.txt')
 #(x,y,dy,labels)=Readxydy('Calib_B.txt')
 
-global fit
 fit = np.polyfit(x,y,1, w=dy**(-2),cov=True )#w=dy**(-1), ) #Cheekily using 1/dy instead of 1/dy^2 because I feel like it's a bit too serious
+global p
 p,V = fit
 print(np.diag(V))
 print(V)
@@ -78,8 +78,8 @@ if "residual"=="residual":
 plt.show()
 
 def inverseFunc(Y):
-	m = fit[0]
-	c = fit[1]
+	m = p[0]
+	c = p[1]
 	X = (1/m)*Y - c/m
 	return X
 while False:
