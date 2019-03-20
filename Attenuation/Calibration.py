@@ -51,7 +51,7 @@ for n in range(len(x)):
 	c = getColor(labels[n])
 	ax1.errorbar(x[n],y[n],dy[n],fmt='.',label=labels[n], color=c)
 covar = "Covariance matrix=\n"+str(V)
-print(sqrt(np.diag(V)))
+print("m,c =",p)
 print(covar)
 ax1.text(min(x),max(y), covar ,va="top",ha="left")#on the top left hand corner
 if 'Auxillary stuff'=='Auxillary stuff':#indented to look nice
@@ -69,8 +69,7 @@ if "residual"=="residual":
 	ax2.axhline(color="black",label=chisqstr)
 	ax2.legend()
 if "Confidence interval"=="Confidence interval":
-	mm,cc=np.random.multivariate_normal(p, chisq*V, size=[10000]).T
-	print(mm,cc)
+	mm,cc=np.random.multivariate_normal(p, chisq*V, size=10000).T
 	stdint=ary([np.std(mm*i + cc) for i in xsm])
 	ax1.fill_between(xsm, p[1]+p[0]*xsm-stdint, p[1]+p[0]*xsm+stdint ,alpha=0.4, label='Confidence interval')
 # if "Confidence interval"=="Confidence interval":
