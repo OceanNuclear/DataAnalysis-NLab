@@ -32,7 +32,7 @@ def Continuous(x):
 global fit
 fit = np.polyfit(x,y,1, w=dy**(-2),cov=True )#w=dy**(-1), ) #Cheekily using 1/dy instead of 1/dy^2 because I feel like it's a bit too serious
 p,V = fit
-print(np.diag(V))
+print(sqrt(np.diag(V)))
 print(V)
 fitFunc = np.poly1d(p)
 #Create plot
