@@ -32,8 +32,6 @@ def Continuous(x):
 global fit
 fit = np.polyfit(x,y,1, w=dy**(-2),cov=True )#w=dy**(-1), ) #Cheekily using 1/dy instead of 1/dy^2 because I feel like it's a bit too serious
 p,V = fit
-print(sqrt(np.diag(V)))
-print(V)
 fitFunc = np.poly1d(p)
 #Create plot
 dummy, (ax1, ax2) = plt.subplots(2, sharex=True,gridspec_kw={'height_ratios':[3,2]})
@@ -53,6 +51,8 @@ for n in range(len(x)):
 	c = getColor(labels[n])
 	ax1.errorbar(x[n],y[n],dy[n],fmt='.',label=labels[n], color=c)
 covar = "Covariance matrix=\n"+str(V)
+print(sqrt(np.diag(V)))
+print(covar)
 ax1.text(min(x),max(y), covar ,va="top",ha="left")#on the top left hand corner
 if 'Auxillary stuff'=='Auxillary stuff':#indented to look nice
 	#Auxillary stuff around the plot
@@ -68,6 +68,11 @@ if "residual"=="residual":
 	ax2.errorbar(x,resid,dy*2,fmt='.')
 	ax2.axhline(color="black",label=chisqstr)
 	ax2.legend()
+if "Confidence interval"=="Confidence interval":
+	aa,bb=np.random.multivariate_normal(p, chisqstr*V, size=[10000]).T
+	[print(i) for i in bb]
+	stdint=ary([np.std(bb*i + aa) for i in xsm])
+	ax1.fill_between(xsm, p[1]+p[0]*xsm-stdint, p[1]+p[0]*xsm+stdint ,alpha=0.4, label='Confidence interval')
 plt.show()
 
 def inverseFunc(Y):
