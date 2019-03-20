@@ -28,15 +28,19 @@ def fittedExp(x,A,B):
 	return A*np.exp(-x/B)
 fig, (ax1, ax2) = plt.subplots(2, sharex=True, gridspec_kw = {"height_ratios":[3,1]})
 
-thickness_col, I_col, dI_col, col = openFile("Ionization_Collimated.tsv")
+thickness_col, I_col, dI_col, col = openFile("Col.tsv")
 ax1.errorbar(thickness_col,  I_col,  dI_col,   label=col  )
-thickness_uncol, I_uncol, dI_uncol, uncol= openFile("Ionization_Uncollimated.tsv")
+thickness_uncol, I_uncol, dI_uncol, uncol= openFile("Uncol.tsv")
 ax1.errorbar(thickness_uncol,I_uncol,dI_uncol, label=uncol)
 
 #Function fitting bit
-[(a,b),((var_a,dummy),(dummy,var_b))] = curve_fit(fittedExp, thickness_col,I_col,sigma=dI_col,absolute_sigma=True, check_finite=True)#
-da = np.sqrt(var_a)
-db = np.sqrt(var_b)
+[(a,b),cov] = curve_fit(fittedExp, thickness_col,I_col,sigma=dI_col,absolute_sigma=True, check_finite=True)#
+da,db = np.sqrt(np.diag(cov))
+if "Confidence interval"=="Confidence interval":
+	aa,bb=np.random.multivariate_normal((a,b), cov, size=[10000]).T
+	[print(i) for i in bb]
+	stdint=ary([np.std(bb*i + aa) for i in xsm])
+	ax1.fill_between(xsm, p[1]+p[0]*xsm-stdint, p[1]+p[0]*xsm+stdint ,alpha=0.4, label='Confidence interval')
 residual = I_col - fittedExp(thickness_col,a,b)
 xSmooth = np.linspace(np.min(thickness_col), np.max(thickness_col), 1000)
 yCalcSmooth = fittedExp(xSmooth, a, b)

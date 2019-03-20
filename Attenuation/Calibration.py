@@ -69,10 +69,15 @@ if "residual"=="residual":
 	ax2.axhline(color="black",label=chisqstr)
 	ax2.legend()
 if "Confidence interval"=="Confidence interval":
-	aa,bb=np.random.multivariate_normal(p, chisqstr*V, size=[10000]).T
-	[print(i) for i in bb]
-	stdint=ary([np.std(bb*i + aa) for i in xsm])
+	mm,cc=np.random.multivariate_normal(p, chisq*V, size=[10000]).T
+	print(mm,cc)
+	stdint=ary([np.std(mm*i + cc) for i in xsm])
 	ax1.fill_between(xsm, p[1]+p[0]*xsm-stdint, p[1]+p[0]*xsm+stdint ,alpha=0.4, label='Confidence interval')
+# if "Confidence interval"=="Confidence interval":
+# 	aa,bb=np.random.multivariate_normal((a,b), cov, size=[10000]).T
+# 	[print(i) for i in bb]
+# 	stdint=ary([np.std(bb*i + aa) for i in xsm])
+# 	ax1.fill_between(xsm, p[1]+p[0]*xsm-stdint, p[1]+p[0]*xsm+stdint ,alpha=0.4, label='Confidence interval')
 plt.show()
 
 def inverseFunc(Y):
