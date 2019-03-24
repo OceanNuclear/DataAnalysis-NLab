@@ -56,65 +56,56 @@ This file shows the cutoff in PERFECT condition.
 --
 22Na-Coin-511Window-fullrange0.Spe:Live Time
 22Na-Coin-511Window-fullrange0.Spe-300
-22Na-B-511Window-Bipolar-0.5shaping.Spe:$DATE_MEA:
 22Na-B-511Window-Bipolar-0.5shaping.Spe-11/30/2018 10:47:46
 --
-22Na-Coin-511Window-fullrange0_5us10V_10degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_10degrees_20cm.Spe-11/30/2018 15:41:40
+22Na-Coin-511Window-fullrange0.5us10V.Spe-11/30/2018 11:09:14
+40047
 --
-22Na-Coin-511Window-fullrange0_5us10V_10degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_10degrees.Spe-11/30/2018 11:41:10
+39355
 --
-22Na-Coin-511Window-fullrange0_5us10V_20degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_20degrees_20cm.Spe-11/30/2018 15:55:11
---
-22Na-Coin-511Window-fullrange0_5us10V_20degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_20degrees.Spe-11/30/2018 11:55:40
+29831
 --
-22Na-Coin-511Window-fullrange0_5us10V_30degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_30degrees.Spe-11/30/2018 12:04:02
+18758
 --
-22Na-Coin-511Window-fullrange0_5us10V_35degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_35degrees_20cm.Spe-11/30/2018 16:21:33
---
-22Na-Coin-511Window-fullrange0_5us10V_40degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_40degrees_20cm.Spe-11/30/2018 16:30:25
---
-22Na-Coin-511Window-fullrange0_5us10V_40degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_40degrees.Spe-11/30/2018 12:14:38
+9238
 --
-22Na-Coin-511Window-fullrange0_5us10V_45degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_45degrees.Spe-11/30/2018 11:33:17
+8289
 --
-22Na-Coin-511Window-fullrange0_5us10V_50degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_50degrees_20cm.Spe-11/30/2018 16:36:07
---
-22Na-Coin-511Window-fullrange0_5us10V_50degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_50degrees.Spe-11/30/2018 12:22:53
+2885
 --
-22Na-Coin-511Window-fullrange0_5us10V_60degrees_20cm.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0_5us10V_60degrees_20cm.Spe-11/30/2018 16:46:57
---
-22Na-Coin-511Window-fullrange0_5us10V_60degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_60degrees.Spe-11/30/2018 12:22:53
+2885
 --
-22Na-Coin-511Window-fullrange0_5us10V_70degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_70degrees.Spe-11/30/2018 12:46:33
+738
 --
-22Na-Coin-511Window-fullrange0_5us10V_80degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_80degrees.Spe-11/30/2018 12:56:16
+10562
 --
-22Na-Coin-511Window-fullrange0_5us10V_90degrees.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_90degrees.Spe-11/30/2018 14:13:49
+740
 --
-22Na-Coin-511Window-fullrange0_5us10V_BG.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0_5us10V_BG.Spe-11/30/2018 14:26:55
 --
-22Na-Coin-511Window-fullrange0.5us10V.Spe:$DATE_MEA:
-22Na-Coin-511Window-fullrange0.5us10V.Spe-11/30/2018 11:09:14
---
-22Na-Coin-511Window-fullrange0.Spe:$DATE_MEA:
 22Na-Coin-511Window-fullrange0.Spe-11/30/2018 15:34:41
+--
+22Na-Coin-511Window-fullrange0_5us10V_10degrees_20cm.Spe-11/30/2018 15:41:40
+--
+22Na-Coin-511Window-fullrange0_5us10V_20degrees_20cm.Spe-11/30/2018 15:55:11
+--
+22Na-Coin-511Window-fullrange0_5us10V_35degrees_20cm.Spe-11/30/2018 16:21:33
+--
+22Na-Coin-511Window-fullrange0_5us10V_40degrees_20cm.Spe-11/30/2018 16:30:25
+--
+22Na-Coin-511Window-fullrange0_5us10V_50degrees_20cm.Spe-11/30/2018 16:36:07
+--
+22Na-Coin-511Window-fullrange0_5us10V_60degrees_20cm.Spe-11/30/2018 16:46:57
 
 For 60+ degrees, everything had to be carried out in 20cm geometry.
 "Due to the inflexibility in choice of minima-finding algorithm, the fits still showed larger than expected background count rate."

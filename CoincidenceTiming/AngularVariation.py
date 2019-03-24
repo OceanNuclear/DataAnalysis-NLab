@@ -2,7 +2,8 @@
 from numpy import cos, arccos, sin, arctan, tan, pi, sqrt; from numpy import array as ary; import numpy as np; tau = 2*pi
 from matplotlib import pyplot as plt
 
-d=10
+# d=10
+d=2.95
 a=7.62/2
 h=sqrt(a**2+d**2)#hypotenuse of the right angle triangle formed by a and d.
 numTests=200000
@@ -62,8 +63,9 @@ def Overlap(THETA):
 		phiList.append(rnPhi())
 	thetaList,phiList=ary([thetaList, phiList])
 	
-	TruthArray1=InCircleList(thetaList,phiList,0)#multiplication of the two boolean arrays is equilvalent to using the "and" condition
+	TruthArray1=InCircleList(thetaList,phiList,0)
 	TruthArray2=InCircleList(thetaList,phiList,THETA)
+	#multiplication of the two boolean arrays is equilvalent to using the "and" condition
 	TotalValidAnswer=TruthArray1*TruthArray2
 
 	return sum(TotalValidAnswer)/numTests
@@ -84,10 +86,13 @@ def spherical_cartesian(theta, phi):	#simple conversion from spherical coordinat
 if __name__=="__main__":
 	y=[]
 	for x in range (0,91):
-		print("computing for", x,"degree")
+		print("computing for", x,"degree(s)")
 		y.append(Overlap(np.deg2rad(x)))
 	plt.plot(y)
 	plt.xlabel("degrees")
 	plt.ylabel("fraction of "+r"$\gamma$"+"'s detected by both detectors")
 	plt.title("Angular variation by random number simulations")
 	plt.show()
+	f=open("AngularVariation.txt","w")
+	[f.write(str(i)+"\n") for i in y]
+	f.close()
