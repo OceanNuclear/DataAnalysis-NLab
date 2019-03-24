@@ -60,5 +60,5 @@ for x in range (0,91):
 	y.append(Overlap(np.deg2rad(x)))
 plt.plot(y)
 plt.xlabel("degrees")
-plt.ylabel("size")
+plt.ylabel("fraction of gamma's detected by both detectors")
 plt.show()
