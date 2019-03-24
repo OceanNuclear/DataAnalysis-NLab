@@ -1,6 +1,7 @@
 #!/home/ocean/anaconda3/bin/python3
 from numpy import cos, arccos, sin, arctan, tan, pi, sqrt; from numpy import array as ary; import numpy as np; tau = 2*pi
 from matplotlib import pyplot as plt
+from numpy import log as ln
 
 cnt=[]
 ax=plt.subplot()
@@ -32,6 +33,7 @@ def disPerSec(isot):
 		print("Disin",Disin,Disin_calc)
 		print("DisinErr",DisinErr,DisinErr_calc)
 	return Disin_calc, DisinErr_calc
+EList, effList, errList= [],[],[]
 if __name__=="__main__":
 	f = open("Efficiency.txt")
 	data = f.readlines()
@@ -50,10 +52,24 @@ if __name__=="__main__":
 				Disin,DisinErr=disPerSec(t.split()[0])
 				#</numerical processing>
 				efficiency,error=PropErr(cnt,err,Disin,DisinErr)
-				plt.errorbar(E,efficiency,error,label=t,  linestyle='',marker="x",markersize=4,capsize=3)
+				# error=efficiency*err/cnt
+				if not "133Ba" in t:
+				# if True:
+					# plt.errorbar(E,efficiency,error,label=t,  linestyle='',marker="x",markersize=4,capsize=3)
+					plt.plot(E,efficiency,label=t, linestyle="", marker="x",markersize=4)
+					EList.append(ln(E))
+					effList.append(ln(efficiency))
+					errList.append(error/efficiency)
 			t=line[1:-1]
 			E, cnt, err, Int = [], [], [], []
-	# ax.set_xscale("log", nonposx='clip')
-	# ax.set_yscale("log", nonposy='clip')
+	ax.set_xscale("log", nonposx='clip')
+	ax.set_yscale("log", nonposy='clip')
+	ax.set_title("Efficiency variation")
+	ax.set_xlabel("E(keV)")
+	ax.set_ylabel(r"$\epsilon_{peak} \left(\frac{\Omega}{4\pi}\right) =\epsilon_{abs} \mathbf{\frac{\epsilon_{peak}}{\epsilon_{intr}}} = \epsilon_{abs}r$")
 	plt.legend()
+	EList=np.concatenate(EList)
+	effList=np.concatenate(effList)
+	errList=np.concatenate(errList)
+	print(ary([EList,effList,errList]).T)
 	plt.show()

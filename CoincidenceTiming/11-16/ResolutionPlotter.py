@@ -3,6 +3,7 @@ from numpy import cos, arccos, sin, arctan, tan, pi, sqrt; from numpy import arr
 from matplotlib import pyplot as plt
 
 f = open("Resolution.txt")
+logscale= False
 
 data = f.readlines()
 FW=[]
@@ -20,10 +21,22 @@ for line in data:
 	else:
 		if len(FW)!=0:
 			E,FW,err=ary(E,dtype=float),ary(FW,dtype=float),ary(err,dtype=float)
-			plt.errorbar(E,calibrated(FW)/E,calibrated(err)/E,label=t,  linestyle='',marker="x",markersize=4,capsize=3)
+			R=calibrated(FW)/E
+			dR=calibrated(err)/E
+			if logscale:
+				plt.errorbar(E,R,dR/R,label=t,  linestyle='',marker="x",markersize=4,capsize=3)
+			else:
+				plt.errorbar(E,R,dR,label=t,  linestyle='',marker="x",markersize=4,capsize=3)
 		t=line[1:-1]
 		E, FW, err = [], [], []
-ax.set_xscale("log", nonposx='clip')
-ax.set_yscale("log", nonposy='clip')
-plt.legend()
+ax.set_xlabel("E (keV)")
+ax.set_ylabel("R(E)")
+ax.legend()
+if logscale:
+	ax.set_xscale("log", nonposx='clip')
+	ax.set_yscale("log", nonposy='clip')
+	#plt.savefig("loglogscaleResolution.png",bbox_inches="tight")
+# else:
+
+# 	plt.savefig("ResolutionFit.png",bbox_inches="tight")
 plt.show()
