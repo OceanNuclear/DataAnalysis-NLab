@@ -44,6 +44,7 @@ def InCircleList(thetaList,phiList,centroid_phi_displacement):
 	
 	r0List=spherical_cartesian(pi2,PHIDISP)
 	r1List=spherical_cartesian(thetaList,phiList)
+	#r_max is the maximum distance between the centre of the "circle" to the test vector r1 such that r1 still lies within the "circle", i.e.  the "radius" of the circle , in 3d.
 	r_max =sqrt(2)* sqrt(1-d/h)#which should be a scalar
 	#The formula for r_max is analytically derived; derivation not included in this code.
 
@@ -74,7 +75,7 @@ def rnTheta():
 def rnPhi():
 	return np.random.uniform(0,tau)
 
-def spherical_cartesian(theta, phi):	#simple conversion from spherical to cartesian, assuming r = 1
+def spherical_cartesian(theta, phi):	#simple conversion from spherical coordinates to unit cartesian vectors
 	x = sin(theta)*cos(phi)
 	y = sin(theta)*sin(phi)
 	z = cos(theta)
