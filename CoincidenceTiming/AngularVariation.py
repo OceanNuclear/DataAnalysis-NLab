@@ -2,8 +2,9 @@
 from numpy import cos, arccos, sin, arctan, tan, pi, sqrt; from numpy import array as ary; import numpy as np; tau = 2*pi
 from matplotlib import pyplot as plt
 
-# d=10
-d=2.95
+# d=2.95
+d=20
+cm="d="+str(d)+"cm"
 a=7.62/2
 h=sqrt(a**2+d**2)#hypotenuse of the right angle triangle formed by a and d.
 numTests=200000
@@ -91,8 +92,8 @@ if __name__=="__main__":
 	plt.plot(y)
 	plt.xlabel("degrees")
 	plt.ylabel("fraction of "+r"$\gamma$"+"'s detected by both detectors")
-	plt.title("Angular variation by random number simulations")
+	plt.title("Expected angular variation by random number sampling, "+cm)
 	plt.show()
-	f=open("AngularVariation.txt","w")
+	f=open("AngularVariation"+cm+".txt","w")
 	[f.write(str(i)+"\n") for i in y]
 	f.close()

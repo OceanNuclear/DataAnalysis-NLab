@@ -4,9 +4,9 @@ from matplotlib import pyplot as plt
 fileName = [
 			# "/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/Det_A_44Ti_67_78_peaks_calibraton.Spe",
 			# "/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/ShowEnergySelection-cutoff/Det_A_44Ti_67_SCA_Window.Spe",
-			"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/Det_B_44Ti_67_78_peaks_calibraton.Spe",
-			"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/ShowEnergySelection-cutoff/Det_B_44Ti_67_78_SCA_Window.Spe",
-			# "/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/11-30/22Na-B-511Window-Bipolar-0.5shaping.Spe",
+			# "/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/Det_B_44Ti_67_78_peaks_calibraton.Spe",
+			# "/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/12-07/Calibration/ShowEnergySelection-cutoff/Det_B_44Ti_67_78_SCA_Window.Spe",
+			"/home/ocean/Documents/GitHubDir/DataAnalysis-NLab/CoincidenceTiming/11-30/22Na-B-511Window-Bipolar-0.5shaping.Spe",
 			]
 			#I've checked 22Na, 241Am, 44Ti. They all don't need background subtraction.
 n=0
@@ -20,7 +20,7 @@ for fn in fileName:
 	data = data[:]
 	# plt.semilogy(data,)#label= str(n))
 	plt.semilogy(data,label=next(names))
-plt.title("Gate applied onto a spectra of"+r"${}^{22}$Na"+"")
+plt.title("Spectrum of"+r"${}^{22}$Na"+" with the proper gate applied to select only the 511keV peak")
 plt.xlabel('channel')
 plt.ylabel("counts")
 plt.legend()
